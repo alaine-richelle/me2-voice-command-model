@@ -1,0 +1,18 @@
+# raw dataset (948 MB) and derived artifacts
+data/
+features.npz
+ckpt.pt
+ckpt_nb.pt
+history.json
+results.json
+figures/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# scratch / debug
+debug*.py
+nb_md_*.txt
+me2_docs/
