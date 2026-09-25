@@ -1,18 +1,27 @@
-# raw dataset (948 MB) and derived artifacts
+# raw dataset (~950 MB) and large derived feature caches
 data/
 features.npz
-ckpt.pt
-ckpt_nb.pt
+features_v2.npz
+
+# obsolete / intermediate model checkpoints (keep only model.pkl)
+ckpt*.pt
+*.pt
 history.json
 results.json
+results_v2.json
+
+# large result artifacts (keep small text metrics)
 figures/
+*_dbg*.py
+ctc_custom.py
+len_check.py
+smoke*.py
+quick_train_test.py
+build_notebook_v2.py
+validate_decoder_v6.py
 
 # python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-
-# scratch / debug
-debug*.py
-nb_md_*.txt
-me2_docs/
+*.log

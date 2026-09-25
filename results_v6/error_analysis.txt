@@ -1,0 +1,44 @@
+ME2 v6 - ERROR ANALYSIS (test split)
+==================================================
+
+Worst-recognized intents (by F1):
+  TIME               support=  54  P=0.431 R=0.815 F1=0.564
+  ALARM              support= 172  P=0.499 R=1.000 F1=0.665
+  TIMER              support= 176  P=1.000 R=0.636 F1=0.778
+  TEMPERATURE        support= 180  P=1.000 R=0.667 F1=0.800
+  CREATE_REMINDER    support= 180  P=1.000 R=0.789 F1=0.882
+  LIGHT_ON           support=  54  P=0.960 R=0.889 F1=0.923
+  STOP               support=  54  P=0.960 R=0.889 F1=0.923
+  LIST_REMINDERS     support=  58  P=1.000 R=0.862 F1=0.926
+
+Best-recognized intents (by F1):
+  VOLUME_DOWN        support=  52  P=1.000 R=0.904 F1=0.950
+  CALL               support=  54  P=1.000 R=0.926 F1=0.962
+  MESSAGE            support=  58  P=1.000 R=0.931 F1=0.964
+  BRIGHTNESS         support= 180  P=1.000 R=0.933 F1=0.966
+  PAUSE              support=  56  P=0.933 R=1.000 F1=0.966
+  VOLUME_UP          support=  60  P=1.000 R=0.933 F1=0.966
+  COLOR              support= 180  P=1.000 R=0.989 F1=0.994
+  WEATHER            support=  52  P=1.000 R=1.000 F1=1.000
+
+Most-confused pairs (gold -> pred : count):
+  TEMPERATURE        ->                    : 60
+  TIMER              -> TIME               : 56
+  CREATE_REMINDER    ->                    : 38
+  BRIGHTNESS         ->                    : 12
+  TIME               ->                    : 8
+  TIMER              ->                    : 8
+  NEXT               ->                    : 6
+  STOP               ->                    : 6
+  LIST_REMINDERS     ->                    : 5
+  VOLUME_DOWN        ->                    : 5
+  LIGHT_OFF          ->                    : 4
+  LIGHT_ON           ->                    : 4
+  MESSAGE            ->                    : 4
+  PLAY_MUSIC         ->                    : 4
+  VOLUME_UP          ->                    : 4
+  CALL               -> PAUSE              : 2
+  CALL               ->                    : 2
+  COLOR              ->                    : 2
+  LIGHT_OFF          -> LIGHT_ON           : 2
+  LIGHT_ON           -> STOP               : 2

@@ -1,0 +1,302 @@
+{
+ "config": {
+  "epochs": 15,
+  "batch": 256,
+  "lr": 0.003,
+  "seed": 0,
+  "beam": 4,
+  "clip": 30,
+  "t_frames": 32,
+  "n_params": 3652572,
+  "feature": "40x128 log-mel",
+  "sr": 16000,
+  "version": "v6",
+  "online_aug": {
+   "time_mask_n": 2,
+   "time_mask_w": 8,
+   "freq_mask_n": 2,
+   "freq_mask_w": 8,
+   "time_shift": 8,
+   "prob": 1.0
+  }
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 3.2625137904159875,
+   "lr": 0.0029672214011007086,
+   "val_greedy_intent": 0.0
+  },
+  {
+   "epoch": 2,
+   "train_loss": 2.7428097010156556,
+   "lr": 0.0028703181864639014,
+   "val_greedy_intent": 0.0
+  },
+  {
+   "epoch": 3,
+   "train_loss": 2.3680748739089914,
+   "lr": 0.0027135254915624215,
+   "val_greedy_intent": 0.0
+  },
+  {
+   "epoch": 4,
+   "train_loss": 1.988105090674876,
+   "lr": 0.002503695909538288,
+   "val_greedy_intent": 0.0016501650165016502
+  },
+  {
+   "epoch": 5,
+   "train_loss": 1.6324905237391665,
+   "lr": 0.0022500000000000003,
+   "val_greedy_intent": 0.0297029702970297
+  },
+  {
+   "epoch": 6,
+   "train_loss": 1.360929142342065,
+   "lr": 0.0019635254915624217,
+   "val_greedy_intent": 0.07315731573157316
+  },
+  {
+   "epoch": 7,
+   "train_loss": 1.131851151724532,
+   "lr": 0.0016567926949014808,
+   "val_greedy_intent": 0.10726072607260725
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.9799746839553843,
+   "lr": 0.0013432073050985206,
+   "val_greedy_intent": 0.17491749174917492
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.8463152637893157,
+   "lr": 0.0010364745084375795,
+   "val_greedy_intent": 0.21342134213421343
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.7585536569543572,
+   "lr": 0.0007500000000000007,
+   "val_greedy_intent": 0.2585258525852585
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.6853718088663695,
+   "lr": 0.0004963040904617134,
+   "val_greedy_intent": 0.3069306930693069
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.63107903737033,
+   "lr": 0.0002864745084375791,
+   "val_greedy_intent": 0.3635863586358636
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.6035808416896175,
+   "lr": 0.00012968181353609857,
+   "val_greedy_intent": 0.37623762376237624
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.5786551872391459,
+   "lr": 3.277859889929148e-05,
+   "val_greedy_intent": 0.3932893289328933
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.5684103902753394,
+   "lr": 0.0,
+   "val_greedy_intent": 0.3927392739273927
+  }
+ ],
+ "best_val_greedy_intent": 0.3932893289328933,
+ "val": {
+  "beam_exact": 0.7018701870187019,
+  "beam_intent": 0.8250825082508251
+ },
+ "test": {
+  "beam_exact": 0.7408231368186874,
+  "beam_intent_acc": 0.8659621802002224
+ },
+ "per_intent": [
+  [
+   "TIMER",
+   176,
+   112,
+   0.6364
+  ],
+  [
+   "TEMPERATURE",
+   180,
+   120,
+   0.6667
+  ],
+  [
+   "CREATE_REMINDER",
+   180,
+   142,
+   0.7889
+  ],
+  [
+   "TIME",
+   54,
+   44,
+   0.8148
+  ],
+  [
+   "LIST_REMINDERS",
+   58,
+   50,
+   0.8621
+  ],
+  [
+   "LIGHT_ON",
+   54,
+   48,
+   0.8889
+  ],
+  [
+   "STOP",
+   54,
+   48,
+   0.8889
+  ],
+  [
+   "PLAY_MUSIC",
+   58,
+   52,
+   0.8966
+  ],
+  [
+   "LIGHT_OFF",
+   60,
+   54,
+   0.9
+  ],
+  [
+   "NEXT",
+   60,
+   54,
+   0.9
+  ],
+  [
+   "VOLUME_DOWN",
+   52,
+   47,
+   0.9038
+  ],
+  [
+   "CALL",
+   54,
+   50,
+   0.9259
+  ],
+  [
+   "MESSAGE",
+   58,
+   54,
+   0.931
+  ],
+  [
+   "BRIGHTNESS",
+   180,
+   168,
+   0.9333
+  ],
+  [
+   "VOLUME_UP",
+   60,
+   56,
+   0.9333
+  ],
+  [
+   "COLOR",
+   180,
+   178,
+   0.9889
+  ],
+  [
+   "ALARM",
+   172,
+   172,
+   1.0
+  ],
+  [
+   "PAUSE",
+   56,
+   56,
+   1.0
+  ],
+  [
+   "WEATHER",
+   52,
+   52,
+   1.0
+  ]
+ ],
+ "confused": [
+  [
+   "TEMPERATURE->None",
+   60
+  ],
+  [
+   "TIMER->TIME",
+   56
+  ],
+  [
+   "CREATE_REMINDER->None",
+   38
+  ],
+  [
+   "BRIGHTNESS->None",
+   12
+  ],
+  [
+   "TIME->None",
+   8
+  ],
+  [
+   "TIMER->None",
+   8
+  ],
+  [
+   "NEXT->None",
+   6
+  ],
+  [
+   "STOP->None",
+   6
+  ],
+  [
+   "LIST_REMINDERS->None",
+   5
+  ],
+  [
+   "VOLUME_DOWN->None",
+   5
+  ],
+  [
+   "LIGHT_OFF->None",
+   4
+  ],
+  [
+   "LIGHT_ON->None",
+   4
+  ],
+  [
+   "MESSAGE->None",
+   4
+  ],
+  [
+   "PLAY_MUSIC->None",
+   4
+  ],
+  [
+   "VOLUME_UP->None",
+   4
+  ]
+ ]
+}
